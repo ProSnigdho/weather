@@ -74,6 +74,7 @@ async function getWeatherData(city) {
 // Event listener for search button
 searchButton.addEventListener('click', () => {
   const city = cityInput.value.trim();
+  console.log('Button clicked, city:', city);  // Debugging line
   if (city) {
     getWeatherData(city);
   } else {
